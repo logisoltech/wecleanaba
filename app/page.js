@@ -45,13 +45,19 @@ export default function HomePage() {
       <section className="section-pad border-b border-border">
         <div className="container-w grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="animate-fade-up">
-            <p className="mb-4 text-xs font-semibold tracking-[0.14em] uppercase text-muted">
-              For Multi-Clinic ABA Operators.
+            <p className="mb-5 text-[18px] font-normal leading-[1.15] text-[#4a4a4a]">
+              For Multi-clinic ABA Operators.
             </p>
-            <h1 className="max-w-xl text-[2.35rem] leading-[1.1] text-foreground md:text-5xl lg:text-[3.25rem]">
-              Controlled Environments for Growing ABA Organizations.
+            <h1 className="text-[2.75rem] font-bold leading-[1.02] tracking-[-0.035em] text-black sm:text-5xl md:text-6xl lg:text-[72px] lg:leading-[72px]">
+              Controlled
+              <br />
+              Environments for
+              <br />
+              Growing ABA
+              <br />
+              Organizations.
             </h1>
-            <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">
+            <p className="mt-6 max-w-lg text-[18px] font-normal leading-[1.45] text-[#4a4a4a]">
               Your clinics shouldn&apos;t be another thing you have to manage.
             </p>
             <ul className="mt-6 max-w-lg space-y-3 text-[0.98rem] leading-relaxed text-muted">

@@ -1,13 +1,6 @@
-import { Inter } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata = {
   title: {
@@ -20,8 +13,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col font-sans antialiased">
+    <html lang="en" className="h-full">
+      <body className="min-h-full flex flex-col antialiased">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
