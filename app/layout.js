@@ -1,18 +1,12 @@
-import { Libre_Baskerville, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const libreBaskerville = Libre_Baskerville({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -26,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${libreBaskerville.variable} h-full`}>
+    <html lang="en" className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col font-sans antialiased">
         <Header />
         <main className="flex-1">{children}</main>
